@@ -13,9 +13,9 @@
 `git clone https://github.com/bhefty/react-boilerplate-fullstack`
 
 2. Change into directory and install dependencies
-
+*Replace `$APP_NAME` with a name for your unique app.*
 ```
-cd app-name-here
+cd $APP_NAME
 npm install
 ```
 
@@ -44,5 +44,21 @@ npm install
 - **Build for production**
 
 `npm run build`
+
+
+
+### Deploy to Heroku
+This buildback is from [Heroku Buildpack for create-react-app](https://github.com/mars/create-react-app-buildpack). Check it out for additional details.
+
+*Replace `$APP_NAME` with a name for your unique app.*
+
+```bash
+heroku create $APP_NAME --buildpack https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "Start with create-react-app"
+git push heroku master
+heroku open
+```
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
