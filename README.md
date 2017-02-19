@@ -13,6 +13,7 @@
 `git clone https://github.com/bhefty/react-boilerplate-fullstack`
 
 2. Change into directory and install dependencies
+
 *Replace `$APP_NAME` with a name for your unique app.*
 ```
 cd $APP_NAME
