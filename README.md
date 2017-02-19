@@ -9,25 +9,40 @@
 
 #### Setup
 1. Clone repo
+
 `git clone https://github.com/bhefty/react-boilerplate-fullstack`
+
 2. Change into directory and install dependencies
+
 ```
 cd app-name-here
 npm install
 ```
 
+
 #### Commands
-- *Run in development mode*
+- **Run in development mode**
+
 `npm run dev`
-- *Run in production mode*
+
+- **Run in production mode**
+
 `npm start`
-- *Start only server*
+
+- **Start only server**
+
 `node server`
-- *Start only client*
+
+- **Start only client**
+
 `npm run client:start`
-- *Run tests*
+
+- **Run tests**
+
 `npm test`
-- *Build for production*
+
+- **Build for production**
+
 `npm build`
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
