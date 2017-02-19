@@ -10,7 +10,7 @@
 #### Setup
 1. Clone repo
 
-`git clone https://github.com/bhefty/react-boilerplate-fullstack`
+`git clone https://github.com/bhefty/react-boilerplate-fullstack.git $APP_NAME`
 
 2. Change into directory and install dependencies
 
