@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import { Grid, Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
+import { Link } from 'react-router'
+import { LinkContainer } from 'react-router-bootstrap'
 
 class Navigation extends Component {
   render() {
     return (
-      <Navbar staticTop>
+      <Navbar staticTop collapseOnSelect={true}>
         <Grid>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href='/'>React App</a>
+              <Link to='/'>React App</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem href='#'>Link</NavItem>
+              <LinkContainer to='/'>
+                <NavItem>Link</NavItem>
+              </LinkContainer>
               <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
                 <MenuItem>Action</MenuItem>
                 <MenuItem>Another Action</MenuItem>
@@ -25,7 +29,9 @@ class Navigation extends Component {
             </Nav>
             <Nav pullRight>
               <NavItem disabled>Hello, user!</NavItem>
-              <NavItem href='login'>Login</NavItem>
+              <LinkContainer to='login'>
+                <NavItem>Login</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Grid>
